@@ -1,0 +1,76 @@
+.header, .nav, .main, .sidebar, .advertise, .footer{
+    background-color: rgb(229, 229, 166);
+    border: 5px solid tomato;
+    border-radius: 10px;
+    padding: 10px;
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.advertise{
+    grid-area: advertise;
+    margin-top: 20px;
+    
+}
+.footer{
+    grid-area: footer;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+     "header  header  header  header"
+     "nav     main    main    sidebar"
+     "nav     main    main    advertise"
+     "footer  footer  footer  footer"
+    ;
+}
+
+/* phn */
+@media screen and (max-width:576px){
+   
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+     "header "
+     "nav"
+     "main "
+     "sidebar"
+     "advertise"
+     "footer"
+    ;
+}
+.advertise{
+    margin-top: 20px;
+}
+}
+/* tab */
+@media screen and (min-width:577px) and (max-width:992px){
+   
+    
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+     "header     header  header  header"
+     "nav        nav     nav     nav"
+     "sidebar    main    main    main "
+     "advertise  footer  footer  footer"
+    ;
+}
+}

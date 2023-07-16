@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Alkatra", cursive;
+  font-family: "Belanosima", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* common-css */
+h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+p {
+  color: #505050;
+  margin: 10px 0;
+  line-height: 1.5rem;
+}
+.btn {
+  background-color: #e55473;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 5px;
+  transition: 0.7s;
+  font-size: 15px;
+}
+.btn:hover {
+  color: #e55473;
+  background-color: white;
+}
+a {
+  color: black;
+}
+.section-gap {
+  margin: 150px 0 0;
+}
+.diff-color {
+  color: #e55473;
+}
+
+/* header-banner */
+header {
+  background-color: #fceef1;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  padding-top: 30px;
+}
+.banner-text {
+  width: 60%;
+  padding: 60px 0;
+}
+.banner-text h1 {
+  font-size: 70px;
+}
+.banner-text p {
+  width: 70%;
+}
+.banner-pic {
+  width: 40%;
+}
+.banner-pic img {
+  width: 100%;
+}
+
+/* featured-section */
+.featured-flowers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.item {
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 50px 60px 0;
+}
+.title {
+  width: 50%;
+  margin: 20px auto 40px;
+}
+.title,
+.featured-flowers h4 {
+  text-align: center;
+  margin-top: 30px;
+}
+.item-1 {
+  background-color: #f1dde7;
+}
+.item-2 {
+  background-color: #d9eff0;
+}
+.item-3 {
+  background-color: #e3ebdb;
+}
+.item img {
+  width: 90%;
+}
+
+/* info-part */
+.info-part {
+  background-color: #f4f4f4;
+  margin: 100px auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* hot-deal-section */
+
+.hot-deal-section {
+  background-color: #fdf6f8;
+  padding: 40px 0;
+}
+.deals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.deals img {
+  width: 300px;
+}
+.hot-deals-text {
+  width: 70%;
+}
+.hot-deals-text p,
+h1,
+button {
+  margin-top: 20px;
+}
+
+/* Flower gifts */
+.gifts {
+  background-color: #d9eff0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 0 70px;
+  padding-top: 100px ;
+  border-radius: 8px;
+  color: rgb(92, 91, 91);
+  position: relative;
+}
+.gifts h1 {
+  color: #e55473;
+}
+.gifts ul li {
+  list-style: square;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+.ideas {
+  padding-bottom: 70px;
+  margin-left: 30px;
+}
+.fig {
+  display: flex;
+}
+.fig img {
+  width: 15%;
+}
+.fig-up {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+.fig-up-2 {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  transform: rotate(170deg);
+}
+.fig-down,
+.fig-down-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+}
+.fig-down-2 {
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  transform: rotate(5deg)
+}
+
+/* insta-photos */
+.insta-photos {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.insta-photos img {
+  width: 270px;
+  margin-right: 18px;
+  transition:  0.6s all;
+}
+.insta-photos img:hover {
+    transform: translateY(-10px)
+}
+
+/* latest-deal-section */
+.latest-deal {
+  background-image: url("./Flower Asset/Rectangle\ 9.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  border-radius: 8px;
+}
+.latest-deal-text {
+  padding: 100px;
+}
+.input-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.input-part button {
+  margin-top: -3px;
+}
+.latest-deal-text input[type="email"] {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* footer */
+footer {
+  background-color: #111010;
+  padding: 60px 0;
+}
+.footer-content,
+.footer-content p {
+  color: white;
+}
